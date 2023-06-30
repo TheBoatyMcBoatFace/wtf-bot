@@ -14,3 +14,6 @@ vars.yml
 
 # ide
 .idea
+
+.nova
+.DS_Store
