@@ -1,5 +1,6 @@
 # wtf.py
-# File Path: wtf-app/wtf.py
+# File Path: api/wtf.py
+import os
 import csv
 import http
 import requests
@@ -10,6 +11,7 @@ from config import Config
 APP = Flask(__name__)
 # Load tokens and URL from environment via Config class
 APP.config.from_object(Config())
+
 
 # Define route for /slack endpoint
 @APP.route('/slack', methods=['GET', 'POST'])
@@ -100,3 +102,7 @@ def slack():
 
     # Return the response
     return make_response(response)
+
+
+if __name__ == "__main__":
+    APP.run(host='0.0.0.0', port=int(os.getenv('API_PORT', 5000)))

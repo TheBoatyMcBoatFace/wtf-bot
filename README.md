@@ -9,10 +9,17 @@ A fancy fork of the VA's WTF Bot.
 First, you need to decide on acronyms. You can find a template here: [TheBoatyMcBoatFace/acronyms](https://github.com/TheBoatyMcBoatFace/acronyms/)
 
 
+Deploy app
+
+
+## Slack Setup
+*The Easy Way*
+The [Slack App](.github/workflows/slack-app.yml) workflow handles creating the app via Slack's [Manifest Create API](https://api.slack.com/methods/apps.manifest.create) and applies updates via their [Manifest Update API](https://api.slack.com/methods/apps.manifest.create).
 
 
 
 
+*The Hard Way*
 
 
 # wtf-bot

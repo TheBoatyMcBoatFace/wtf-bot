@@ -1,5 +1,5 @@
 # config.py
-# File Path: wtf-app/config.py
+# File Path: api/config.py
 # os module provides functions for interacting with the operating system like reading environment variables
 from os import getenv
 

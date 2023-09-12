@@ -11,7 +11,7 @@ os.environ['DATA_URL'] = 'https://raw.githubusercontent.com/department-of-vetera
     '/wtf-bot/master/test_acronyms.csv'
 
 # Import after setting environment variables
-from wtf import APP    # noqa: E402
+from api.wtf import APP    # noqa: E402
 
 
 @pytest.fixture

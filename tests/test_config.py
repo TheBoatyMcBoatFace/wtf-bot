@@ -1,6 +1,6 @@
 import os
 import pytest
-from config import Config
+from api.config import Config
 
 
 @pytest.fixture(autouse=True)
